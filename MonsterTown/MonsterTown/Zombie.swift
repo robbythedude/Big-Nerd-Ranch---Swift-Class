@@ -10,7 +10,29 @@ import Foundation
 
 class Zombie : Monster {
 
-    var walksWithLimp = true
+    var walksWithLimp: Bool
+    private(set) var isFallingApart: Bool
+    
+    init?(limp: Bool, fallingApart: Bool, town: Town?, monsterName: String){
+        self.walksWithLimp = limp
+        self.isFallingApart = fallingApart
+        super.init(town: town, monsterName: monsterName)
+    }
+    
+    convenience init?(limp: Bool, fallingApart: Bool){
+        self.init(limp: limp, fallingApart: fallingApart, town: nil, monsterName: "Fred")
+        if walksWithLimp {
+            print("This zombies has a bad knee")
+        }
+    }
+    
+    convenience required init?(town: Town?, monsterName: String) {
+        self.init(limp: false, fallingApart: false, town: town, monsterName: monsterName)
+    }
+    
+    deinit {
+        print("RIP \(self.name) the Zombie")
+    }
     
     override class var spookyNoise: String {
         return "Brains..."

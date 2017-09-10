@@ -10,7 +10,7 @@ import Foundation
 
 class Vampire : Monster {
 
-    static var vampireCollection : [Vampire] = []
+    static var vampireCollection : [Vampire?] = []
     
     override func terrorizeTown() {
         var decreaseBy: Int = 0
@@ -18,7 +18,7 @@ class Vampire : Monster {
         if let town = town {
             if town.population != 0{
                 decreaseBy = 1
-                let newVampire : Vampire = Vampire()
+                let newVampire : Vampire? = Vampire(town: self.town, monsterName: "Vampire Spawn")
                 Vampire.vampireCollection.append(newVampire)
             }
         }
