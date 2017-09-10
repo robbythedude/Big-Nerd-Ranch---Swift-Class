@@ -10,8 +10,27 @@ import Foundation
 
 struct Town {
 
-    static let region = "South"
-    var population = 0 {
+    
+    init(region: String, population: Int, stopLights: Int){
+        self.region = region
+        self.population = population
+        self.numberOfStopLights = stopLights
+    }
+    
+    init?(population: Int){
+        guard population > 0 else {
+            return nil
+        }
+        
+        self.init(region: "N/A", population: population, stopLights: 0)
+    }
+    
+    init(population: Int, stopLights: Int){
+        self.init(region: "N/A", population: population, stopLights: stopLights)
+    }
+    
+    let region: String
+    var population: Int {
         didSet(oldPopulation){
             if population < oldPopulation{
                 print("The population has changed to \(population) from \(oldPopulation)")
@@ -20,7 +39,7 @@ struct Town {
             }
         }
     }
-    var numberOfStopLights = 4
+    var numberOfStopLights: Int
     var townMayor : Mayor?
     
     enum Size {

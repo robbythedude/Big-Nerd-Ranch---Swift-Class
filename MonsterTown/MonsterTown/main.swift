@@ -8,7 +8,7 @@
 
 import Foundation
 
-var myTown = Town()
+var myTown = Town(region: "South", population: 10_000, stopLights: 6)
 var myMayor = Mayor()
 
 print(myTown.townSize)
@@ -19,18 +19,22 @@ myTown.townMayor = myMayor
 
 myTown.changePopulation(by: 11)
 
-let fredTheZombie = Zombie()
-fredTheZombie.town = myTown
-fredTheZombie.terrorizeTown()
-print("Fred's Victim Pool \(fredTheZombie.victimPool)")
+var fredTheZombie: Zombie? = Zombie(limp: true, fallingApart: true, town: myTown, monsterName: "Fred")
+let convientFredZombie = Zombie(limp: true, fallingApart: false)
+fredTheZombie?.terrorizeTown()
+if let vPool = fredTheZombie?.victimPool{
+    print("Fred's Victim Pool is \(vPool)")
+}
 print(Zombie.spookyNoise)
 if(Zombie.isTerrifying){
     print("Run!!")
 }
 
-let thrallTheVampure = Vampire()
-thrallTheVampure.town = myTown
-thrallTheVampure.terrorizeTown()
-thrallTheVampure.terrorizeTown()
+fredTheZombie = nil
+
+let thrallTheVampure: Vampire? = Vampire(town: myTown, monsterName: "Thrall")
+thrallTheVampure?.town = myTown
+thrallTheVampure?.terrorizeTown()
+thrallTheVampure?.terrorizeTown()
 Vampire.printHowManyVampires()
 
