@@ -9,19 +9,28 @@
 import Foundation
 
 var myTown = Town()
+var myMayor = Mayor()
 
-myTown.printDescription()
+print(myTown.townSize)
+myTown.changePopulation(by: 1_000_000)
+print(myTown.townSize)
+
+myTown.townMayor = myMayor
+
 myTown.changePopulation(by: 11)
-myTown.printDescription()
 
 let fredTheZombie = Zombie()
 fredTheZombie.town = myTown
 fredTheZombie.terrorizeTown()
-fredTheZombie.town?.printDescription()
+print("Fred's Victim Pool \(fredTheZombie.victimPool)")
+print(Zombie.spookyNoise)
+if(Zombie.isTerrifying){
+    print("Run!!")
+}
 
 let thrallTheVampure = Vampire()
 thrallTheVampure.town = myTown
 thrallTheVampure.terrorizeTown()
 thrallTheVampure.terrorizeTown()
-thrallTheVampure.town?.printDescription()
 Vampire.printHowManyVampires()
+
