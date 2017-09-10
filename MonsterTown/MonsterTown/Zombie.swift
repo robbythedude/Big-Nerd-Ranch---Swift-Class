@@ -12,6 +12,10 @@ class Zombie : Monster {
 
     var walksWithLimp = true
     
+    override class var spookyNoise: String {
+        return "Brains..."
+    }
+    
     final override func terrorizeTown() {
         
         var decreaseBy: Int = 0

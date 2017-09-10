@@ -12,6 +12,20 @@ class Monster {
 
     var town: Town?
     var name = "Monster"
+    var victimPool: Int {
+        get {
+            return town?.population ?? 0
+        }
+        set(newVictimPool){
+            town?.population = newVictimPool
+        }
+    }
+    
+    static let isTerrifying = true
+    
+    class var spookyNoise: String {
+        return "Grrr..."
+    }
     
     func terrorizeTown(){
         if town != nil {
