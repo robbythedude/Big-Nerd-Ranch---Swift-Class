@@ -38,7 +38,23 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("ConversionViewController loaded its view.")
+        
         updateCelsiusLabel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.view.backgroundColor = {
+            
+            let green = CGFloat(arc4random()) / CGFloat(UInt32.max)
+            let red = CGFloat(arc4random()) / CGFloat(UInt32.max)
+            let blue = CGFloat(arc4random()) / CGFloat(UInt32.max)
+            
+            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        }()
+        
     }
     
     @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField){
