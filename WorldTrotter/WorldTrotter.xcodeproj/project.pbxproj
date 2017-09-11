@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFB4065A1F670C4C00784FC6 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB406591F670C4C00784FC6 /* ConversionViewController.swift */; };
 		DFDC83C61F66E54000BC1792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC83C51F66E54000BC1792 /* AppDelegate.swift */; };
 		DFDC83C81F66E54000BC1792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC83C71F66E54000BC1792 /* ViewController.swift */; };
 		DFDC83CB1F66E54000BC1792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDC83C91F66E54000BC1792 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFB406591F670C4C00784FC6 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		DFDC83C21F66E54000BC1792 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDC83C51F66E54000BC1792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDC83C71F66E54000BC1792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				DFDC83CC1F66E54000BC1792 /* Assets.xcassets */,
 				DFDC83CE1F66E54000BC1792 /* LaunchScreen.storyboard */,
 				DFDC83D11F66E54000BC1792 /* Info.plist */,
+				DFB406591F670C4C00784FC6 /* ConversionViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDC83C81F66E54000BC1792 /* ViewController.swift in Sources */,
+				DFB4065A1F670C4C00784FC6 /* ConversionViewController.swift in Sources */,
 				DFDC83C61F66E54000BC1792 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +412,7 @@
 				DFDC83E11F66E54000BC1792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFDC83E21F66E54000BC1792 /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +421,7 @@
 				DFDC83E41F66E54000BC1792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
