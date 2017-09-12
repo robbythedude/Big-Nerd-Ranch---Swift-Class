@@ -10,6 +10,8 @@
 		DF67090E1F672E7E00D4AC39 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF67090D1F672E7E00D4AC39 /* MapKit.framework */; };
 		DF6709101F67317400D4AC39 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67090F1F67317400D4AC39 /* MapViewController.swift */; };
 		DFB4065A1F670C4C00784FC6 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB406591F670C4C00784FC6 /* ConversionViewController.swift */; };
+		DFC8D22C1F682DED007360C4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC8D22B1F682DED007360C4 /* WebViewController.swift */; };
+		DFC8D22E1F683A57007360C4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8D22D1F683A57007360C4 /* WebKit.framework */; };
 		DFDC83C61F66E54000BC1792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC83C51F66E54000BC1792 /* AppDelegate.swift */; };
 		DFDC83C81F66E54000BC1792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC83C71F66E54000BC1792 /* ViewController.swift */; };
 		DFDC83CB1F66E54000BC1792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDC83C91F66E54000BC1792 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		DF67090D1F672E7E00D4AC39 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DF67090F1F67317400D4AC39 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DFB406591F670C4C00784FC6 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		DFC8D22B1F682DED007360C4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DFC8D22D1F683A57007360C4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		DFDC83C21F66E54000BC1792 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDC83C51F66E54000BC1792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDC83C71F66E54000BC1792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC8D22E1F683A57007360C4 /* WebKit.framework in Frameworks */,
 				DF67090E1F672E7E00D4AC39 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +71,7 @@
 		DF67090C1F672E7E00D4AC39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFC8D22D1F683A57007360C4 /* WebKit.framework */,
 				DF67090D1F672E7E00D4AC39 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -101,6 +107,7 @@
 				DFDC83D11F66E54000BC1792 /* Info.plist */,
 				DFB406591F670C4C00784FC6 /* ConversionViewController.swift */,
 				DF67090F1F67317400D4AC39 /* MapViewController.swift */,
+				DFC8D22B1F682DED007360C4 /* WebViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 				DFDC83C81F66E54000BC1792 /* ViewController.swift in Sources */,
 				DFB4065A1F670C4C00784FC6 /* ConversionViewController.swift in Sources */,
 				DFDC83C61F66E54000BC1792 /* AppDelegate.swift in Sources */,
+				DFC8D22C1F682DED007360C4 /* WebViewController.swift in Sources */,
 				DF6709101F67317400D4AC39 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

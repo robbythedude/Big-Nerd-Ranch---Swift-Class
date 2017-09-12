@@ -93,17 +93,23 @@
             </objects>
             <point key="canvasLocation" x="1993" y="510"/>
         </scene>
+        <!--Browser-->
+        <scene sceneID="JLK-5d-8bt">
+            <objects>
+                <viewController id="ouF-T0-sBm" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Browser" image="BrowserIcon" id="jOU-Zx-Efq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJY-aN-jk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2789" y="82"/>
+        </scene>
         <!--Map-->
         <scene sceneID="YZi-qU-YjC">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHd-pd-RmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NxK-yM-Sv4" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="1rX-2A-eOX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="Znc-vd-gRU"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lHd-pd-RmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1993" y="-354"/>
         </scene>
@@ -113,12 +119,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OTK-Ev-7RG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Djv-vh-Hny">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fh4-S4-0V5"/>
                         <segue destination="NxK-yM-Sv4" kind="relationship" relationship="viewControllers" id="H43-Z2-lH1"/>
+                        <segue destination="ouF-T0-sBm" kind="relationship" relationship="viewControllers" id="dmr-QM-zO2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxe-J3-Yaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,6 +135,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BrowserIcon" width="48" height="48"/>
         <image name="ConvertIcon" width="48" height="32"/>
         <image name="MapIcon" width="48" height="32"/>
     </resources>
