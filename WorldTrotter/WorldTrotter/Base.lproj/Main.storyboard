@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCS-3g-D7r">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCS-3g-D7r">
                                 <rect key="frame" x="35" y="132" width="305.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +40,7 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otG-ab-jNE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otG-ab-jNE">
                                 <rect key="frame" x="60.5" y="326" width="254" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,10 +62,13 @@
                         <constraints>
                             <constraint firstItem="tST-pF-z9k" firstAttribute="top" secondItem="SCS-3g-D7r" secondAttribute="bottom" constant="8" id="1IQ-TZ-ibc"/>
                             <constraint firstItem="UU4-Ag-uQO" firstAttribute="centerX" secondItem="SCS-3g-D7r" secondAttribute="centerX" id="64o-yI-EEU"/>
+                            <constraint firstItem="SCS-3g-D7r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RiQ-Iv-lmp"/>
                             <constraint firstItem="UU4-Ag-uQO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="SX3-hw-ekT"/>
                             <constraint firstItem="tST-pF-z9k" firstAttribute="top" secondItem="SCS-3g-D7r" secondAttribute="bottom" constant="8" id="Udb-fR-gw3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SCS-3g-D7r" secondAttribute="trailing" constant="18.5" id="apP-Mo-3gs"/>
                             <constraint firstItem="oPk-t4-Jcf" firstAttribute="top" secondItem="tST-pF-z9k" secondAttribute="bottom" constant="8" id="c3e-1c-JdP"/>
                             <constraint firstItem="SCS-3g-D7r" firstAttribute="top" secondItem="UU4-Ag-uQO" secondAttribute="bottom" constant="8" id="cXJ-up-vr0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="otG-ab-jNE" secondAttribute="trailing" constant="44.5" id="dpr-Zi-BfD"/>
                             <constraint firstItem="otG-ab-jNE" firstAttribute="centerX" secondItem="SCS-3g-D7r" secondAttribute="centerX" id="eM9-3n-W88"/>
                             <constraint firstItem="otG-ab-jNE" firstAttribute="top" secondItem="oPk-t4-Jcf" secondAttribute="bottom" constant="8" id="fdt-eR-Qam"/>
                             <constraint firstItem="UU4-Ag-uQO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gae-hd-1Xl"/>
@@ -73,6 +77,7 @@
                             <constraint firstItem="oPk-t4-Jcf" firstAttribute="centerX" secondItem="SCS-3g-D7r" secondAttribute="centerX" id="t9s-tf-Q7Z"/>
                             <constraint firstItem="otG-ab-jNE" firstAttribute="top" secondItem="oPk-t4-Jcf" secondAttribute="bottom" constant="8" id="tI2-ci-U2a"/>
                             <constraint firstItem="oPk-t4-Jcf" firstAttribute="top" secondItem="tST-pF-z9k" secondAttribute="bottom" constant="8" id="wyA-Tt-UrA"/>
+                            <constraint firstItem="otG-ab-jNE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yAE-9p-YMH"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="L3Z-0v-XrP" appends="YES" id="Bpz-eC-1KC"/>
@@ -106,10 +111,10 @@
         <!--Map-->
         <scene sceneID="YZi-qU-YjC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lHd-pd-RmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NxK-yM-Sv4" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="Znc-vd-gRU"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHd-pd-RmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1993" y="-354"/>
         </scene>
@@ -135,7 +140,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BrowserIcon" width="48" height="48"/>
+        <image name="BrowserIcon" width="48" height="32"/>
         <image name="ConvertIcon" width="48" height="32"/>
         <image name="MapIcon" width="48" height="32"/>
     </resources>
