@@ -12,6 +12,12 @@ class ItemsViewController: UITableViewController{
     
     var itemStore: ItemStore!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +25,7 @@ class ItemsViewController: UITableViewController{
         tableView.estimatedRowHeight = 65
     }
     
-    @IBAction func addNewItem(_ sender: UIButton){
+    @IBAction func addNewItem(_ sender: UIBarButtonItem){
         //Create new item and add it to the store
         let newItem = itemStore.createItem()
         
@@ -30,22 +36,6 @@ class ItemsViewController: UITableViewController{
             //Insert this new row into the table
             tableView.insertRows(at: [indexPath], with: .automatic)
         }
-    }
-    
-    @IBAction func toggleEditingMode(_ sender: UIButton){
-        //If you are currently in editing mode....
-        if isEditing {
-            //change text of button to inform user of state
-            sender.setTitle("Edit", for: .normal)
-            
-            setEditing(false, animated: true)
-        }else{
-            //Change text of button to inform user of state
-            sender.setTitle("Done", for: .normal)
-            
-            setEditing(true, animated: true)
-        }
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -103,4 +93,11 @@ class ItemsViewController: UITableViewController{
             preconditionFailure("Unexpected segue identifier")
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
+    }
+    
 }
