@@ -92,7 +92,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Rt-Zb-ypi">
-                                <rect key="frame" x="8" y="72" width="359" height="587"/>
+                                <rect key="frame" x="8" y="72" width="359" height="543"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hzr-OY-xjA">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
@@ -155,25 +155,49 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM9-hJ-Sbs">
-                                        <rect key="frame" x="0.0" y="114" width="359" height="473"/>
+                                        <rect key="frame" x="0.0" y="114" width="359" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Bsw-ed-8XP">
+                                        <rect key="frame" x="0.0" y="142.5" width="359" height="400.5"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="6Qj-gO-SXg" firstAttribute="leading" secondItem="CDF-Y9-4be" secondAttribute="leading" id="HLs-h4-ken"/>
                                     <constraint firstItem="CDF-Y9-4be" firstAttribute="leading" secondItem="RkN-R9-GXc" secondAttribute="leading" id="Sj7-8v-K5k"/>
                                 </constraints>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZY2-lk-p3C">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qsC-05-18e"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="CbK-yK-y7R">
+                                        <connections>
+                                            <action selector="choosePhotoSource:" destination="D6d-Zl-bjH" id="gEk-aY-XgC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="trash" id="Mj5-bW-8yL">
+                                        <connections>
+                                            <action selector="trashImage:" destination="D6d-Zl-bjH" id="3jg-9i-wnT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="2Rt-Zb-ypi" firstAttribute="leading" secondItem="y9y-kx-620" secondAttribute="leading" constant="8" id="1uz-aD-J60"/>
+                            <constraint firstItem="ZY2-lk-p3C" firstAttribute="bottom" secondItem="y9y-kx-620" secondAttribute="bottom" id="AJs-eT-gO6"/>
+                            <constraint firstItem="ZY2-lk-p3C" firstAttribute="top" secondItem="2Rt-Zb-ypi" secondAttribute="bottom" constant="8" id="BTp-Rr-zZr"/>
                             <constraint firstItem="2Rt-Zb-ypi" firstAttribute="top" secondItem="y9y-kx-620" secondAttribute="top" constant="8" id="Geh-8d-tQz"/>
+                            <constraint firstItem="ZY2-lk-p3C" firstAttribute="trailing" secondItem="y9y-kx-620" secondAttribute="trailing" id="OZH-jn-f0Y"/>
+                            <constraint firstItem="ZY2-lk-p3C" firstAttribute="leading" secondItem="y9y-kx-620" secondAttribute="leading" id="QSD-aB-4bF"/>
                             <constraint firstItem="y9y-kx-620" firstAttribute="trailing" secondItem="2Rt-Zb-ypi" secondAttribute="trailing" constant="8" id="VKl-Rq-ntY"/>
-                            <constraint firstItem="y9y-kx-620" firstAttribute="bottom" secondItem="2Rt-Zb-ypi" secondAttribute="bottom" constant="8" id="hfP-hv-dmu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y9y-kx-620"/>
                         <connections>
@@ -182,13 +206,15 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="zM9-hJ-Sbs" id="cnI-YJ-Eyp"/>
+                        <outlet property="imageView" destination="Bsw-ed-8XP" id="Sac-qK-YE1"/>
                         <outlet property="nameField" destination="6Qj-gO-SXg" id="co7-Vw-HcG"/>
                         <outlet property="serialField" destination="CDF-Y9-4be" id="mrT-wl-Xkx"/>
+                        <outlet property="trashButton" destination="Mj5-bW-8yL" id="MDZ-GG-4TY"/>
                         <outlet property="valueField" destination="RkN-R9-GXc" id="fzA-jc-vlm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxG-7G-koF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="yIW-jb-fkA">
+                <tapGestureRecognizer enabled="NO" id="yIW-jb-fkA">
                     <connections>
                         <action selector="backgroundTapped:" destination="D6d-Zl-bjH" id="RjM-Sj-34T"/>
                     </connections>
