@@ -67,7 +67,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
 }
 
 class CustomeUITextField : UITextField{
