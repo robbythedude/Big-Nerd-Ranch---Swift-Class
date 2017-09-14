@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFDC83C11F66E54000BC1792"
-               BuildableName = "WorldTrotter.app"
-               BlueprintName = "WorldTrotter"
-               ReferencedContainer = "container:WorldTrotter.xcodeproj">
+               BlueprintIdentifier = "DF623BA31F68901C009202E9"
+               BuildableName = "Homepwner.app"
+               BlueprintName = "Homepwner"
+               ReferencedContainer = "container:Homepwner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,26 +26,17 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFDC83D51F66E54000BC1792"
-               BuildableName = "WorldTrotterTests.xctest"
-               BlueprintName = "WorldTrotterTests"
-               ReferencedContainer = "container:WorldTrotter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFDC83C11F66E54000BC1792"
-            BuildableName = "WorldTrotter.app"
-            BlueprintName = "WorldTrotter"
-            ReferencedContainer = "container:WorldTrotter.xcodeproj">
+            BlueprintIdentifier = "DF623BA31F68901C009202E9"
+            BuildableName = "Homepwner.app"
+            BlueprintName = "Homepwner"
+            ReferencedContainer = "container:Homepwner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,22 +46,21 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      language = "ko"
-      region = "KR">
+      allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFDC83C11F66E54000BC1792"
-            BuildableName = "WorldTrotter.app"
-            BlueprintName = "WorldTrotter"
-            ReferencedContainer = "container:WorldTrotter.xcodeproj">
+            BlueprintIdentifier = "DF623BA31F68901C009202E9"
+            BuildableName = "Homepwner.app"
+            BlueprintName = "Homepwner"
+            ReferencedContainer = "container:Homepwner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -86,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFDC83C11F66E54000BC1792"
-            BuildableName = "WorldTrotter.app"
-            BlueprintName = "WorldTrotter"
-            ReferencedContainer = "container:WorldTrotter.xcodeproj">
+            BlueprintIdentifier = "DF623BA31F68901C009202E9"
+            BuildableName = "Homepwner.app"
+            BlueprintName = "Homepwner"
+            ReferencedContainer = "container:Homepwner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
