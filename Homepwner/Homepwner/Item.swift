@@ -13,12 +13,14 @@ class Item: NSObject, NSCoding {
     var valueInDollars: Int
     var serialNumber: String?
     var dateCreated: Date
+    let itemKey: String
     
     init(name: String, serialNumber: String?, valueInDollars: Int){
         self.name = name
         self.serialNumber = serialNumber
         self.valueInDollars = valueInDollars
         self.dateCreated = Date()
+        self.itemKey = UUID().uuidString
         
         super.init()
     }
@@ -50,6 +52,7 @@ class Item: NSObject, NSCoding {
         case dateCreated
         case serialNumber
         case valueInDollars
+        case itemKey
     }
     
     func encode(with aCoder: NSCoder){
@@ -57,6 +60,7 @@ class Item: NSObject, NSCoding {
         aCoder.encode(dateCreated, forKey: EncodeKeys.dateCreated.hashValue.description)
         aCoder.encode(serialNumber, forKey: EncodeKeys.serialNumber.hashValue.description)
         aCoder.encode(valueInDollars, forKey: EncodeKeys.valueInDollars.hashValue.description)
+        aCoder.encode(itemKey, forKey: EncodeKeys.itemKey.hashValue.description)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -64,6 +68,7 @@ class Item: NSObject, NSCoding {
         dateCreated = aDecoder.decodeObject(forKey: EncodeKeys.dateCreated.hashValue.description) as! Date
         serialNumber = aDecoder.decodeObject(forKey: EncodeKeys.serialNumber.hashValue.description) as! String?
         valueInDollars = aDecoder.decodeInteger(forKey: EncodeKeys.valueInDollars.hashValue.description)
+        itemKey = aDecoder.decodeObject(forKey: EncodeKeys.itemKey.hashValue.description) as! String
     }
     
 }
