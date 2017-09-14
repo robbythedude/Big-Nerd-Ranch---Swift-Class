@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF5F9CF41F6B206200A7017C /* MoodsConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5F9CF31F6B206200A7017C /* MoodsConfigurable.swift */; };
+		DFE27FCF1F6B071600D9AC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE27FCE1F6B071600D9AC88 /* AppDelegate.swift */; };
+		DFE27FD41F6B071600D9AC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE27FD21F6B071600D9AC88 /* Main.storyboard */; };
+		DFE27FD61F6B071600D9AC88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE27FD51F6B071600D9AC88 /* Assets.xcassets */; };
+		DFE27FD91F6B071600D9AC88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE27FD71F6B071600D9AC88 /* LaunchScreen.storyboard */; };
+		DFE27FE41F6B071600D9AC88 /* MandalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE27FE31F6B071600D9AC88 /* MandalaTests.swift */; };
+		DFE27FEF1F6B071600D9AC88 /* MandalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE27FEE1F6B071600D9AC88 /* MandalaUITests.swift */; };
+		DFE27FFD1F6B074600D9AC88 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE27FFC1F6B074600D9AC88 /* Mood.swift */; };
+		DFE27FFF1F6B076900D9AC88 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE27FFE1F6B076900D9AC88 /* MoodEntry.swift */; };
+		DFE280011F6B0CAD00D9AC88 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE280001F6B0CAD00D9AC88 /* UIColor+Extension.swift */; };
+		DFE280031F6B0E3C00D9AC88 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE280021F6B0E3C00D9AC88 /* UIImage+Extension.swift */; };
+		DFE280051F6B15EB00D9AC88 /* MoodSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE280041F6B15EB00D9AC88 /* MoodSelectionViewController.swift */; };
+		DFE280071F6B1B3400D9AC88 /* MoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE280061F6B1B3400D9AC88 /* MoodListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFE27FE01F6B071600D9AC88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE27FC31F6B071600D9AC88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE27FCA1F6B071600D9AC88;
+			remoteInfo = Mandala;
+		};
+		DFE27FEB1F6B071600D9AC88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE27FC31F6B071600D9AC88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE27FCA1F6B071600D9AC88;
+			remoteInfo = Mandala;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF5F9CF31F6B206200A7017C /* MoodsConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsConfigurable.swift; sourceTree = "<group>"; };
+		DFE27FCB1F6B071600D9AC88 /* Mandala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mandala.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE27FCE1F6B071600D9AC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFE27FD31F6B071600D9AC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFE27FD51F6B071600D9AC88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFE27FD81F6B071600D9AC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFE27FDA1F6B071600D9AC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE27FDF1F6B071600D9AC88 /* MandalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE27FE31F6B071600D9AC88 /* MandalaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandalaTests.swift; sourceTree = "<group>"; };
+		DFE27FE51F6B071600D9AC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE27FEA1F6B071600D9AC88 /* MandalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE27FEE1F6B071600D9AC88 /* MandalaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandalaUITests.swift; sourceTree = "<group>"; };
+		DFE27FF01F6B071600D9AC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE27FFC1F6B074600D9AC88 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		DFE27FFE1F6B076900D9AC88 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		DFE280001F6B0CAD00D9AC88 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DFE280021F6B0E3C00D9AC88 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DFE280041F6B15EB00D9AC88 /* MoodSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelectionViewController.swift; sourceTree = "<group>"; };
+		DFE280061F6B1B3400D9AC88 /* MoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFE27FC81F6B071600D9AC88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE27FDC1F6B071600D9AC88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE27FE71F6B071600D9AC88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFE27FC21F6B071600D9AC88 = {
+			isa = PBXGroup;
+			children = (
+				DFE27FCD1F6B071600D9AC88 /* Mandala */,
+				DFE27FE21F6B071600D9AC88 /* MandalaTests */,
+				DFE27FED1F6B071600D9AC88 /* MandalaUITests */,
+				DFE27FCC1F6B071600D9AC88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFE27FCC1F6B071600D9AC88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFE27FCB1F6B071600D9AC88 /* Mandala.app */,
+				DFE27FDF1F6B071600D9AC88 /* MandalaTests.xctest */,
+				DFE27FEA1F6B071600D9AC88 /* MandalaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFE27FCD1F6B071600D9AC88 /* Mandala */ = {
+			isa = PBXGroup;
+			children = (
+				DFE27FCE1F6B071600D9AC88 /* AppDelegate.swift */,
+				DFE27FD21F6B071600D9AC88 /* Main.storyboard */,
+				DFE27FD51F6B071600D9AC88 /* Assets.xcassets */,
+				DFE27FD71F6B071600D9AC88 /* LaunchScreen.storyboard */,
+				DFE27FDA1F6B071600D9AC88 /* Info.plist */,
+				DFE27FFC1F6B074600D9AC88 /* Mood.swift */,
+				DFE27FFE1F6B076900D9AC88 /* MoodEntry.swift */,
+				DFE280001F6B0CAD00D9AC88 /* UIColor+Extension.swift */,
+				DFE280021F6B0E3C00D9AC88 /* UIImage+Extension.swift */,
+				DFE280041F6B15EB00D9AC88 /* MoodSelectionViewController.swift */,
+				DFE280061F6B1B3400D9AC88 /* MoodListViewController.swift */,
+				DF5F9CF31F6B206200A7017C /* MoodsConfigurable.swift */,
+			);
+			path = Mandala;
+			sourceTree = "<group>";
+		};
+		DFE27FE21F6B071600D9AC88 /* MandalaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE27FE31F6B071600D9AC88 /* MandalaTests.swift */,
+				DFE27FE51F6B071600D9AC88 /* Info.plist */,
+			);
+			path = MandalaTests;
+			sourceTree = "<group>";
+		};
+		DFE27FED1F6B071600D9AC88 /* MandalaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE27FEE1F6B071600D9AC88 /* MandalaUITests.swift */,
+				DFE27FF01F6B071600D9AC88 /* Info.plist */,
+			);
+			path = MandalaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFE27FCA1F6B071600D9AC88 /* Mandala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE27FF31F6B071600D9AC88 /* Build configuration list for PBXNativeTarget "Mandala" */;
+			buildPhases = (
+				DFE27FC71F6B071600D9AC88 /* Sources */,
+				DFE27FC81F6B071600D9AC88 /* Frameworks */,
+				DFE27FC91F6B071600D9AC88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mandala;
+			productName = Mandala;
+			productReference = DFE27FCB1F6B071600D9AC88 /* Mandala.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFE27FDE1F6B071600D9AC88 /* MandalaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE27FF61F6B071600D9AC88 /* Build configuration list for PBXNativeTarget "MandalaTests" */;
+			buildPhases = (
+				DFE27FDB1F6B071600D9AC88 /* Sources */,
+				DFE27FDC1F6B071600D9AC88 /* Frameworks */,
+				DFE27FDD1F6B071600D9AC88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE27FE11F6B071600D9AC88 /* PBXTargetDependency */,
+			);
+			name = MandalaTests;
+			productName = MandalaTests;
+			productReference = DFE27FDF1F6B071600D9AC88 /* MandalaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFE27FE91F6B071600D9AC88 /* MandalaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE27FF91F6B071600D9AC88 /* Build configuration list for PBXNativeTarget "MandalaUITests" */;
+			buildPhases = (
+				DFE27FE61F6B071600D9AC88 /* Sources */,
+				DFE27FE71F6B071600D9AC88 /* Frameworks */,
+				DFE27FE81F6B071600D9AC88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE27FEC1F6B071600D9AC88 /* PBXTargetDependency */,
+			);
+			name = MandalaUITests;
+			productName = MandalaUITests;
+			productReference = DFE27FEA1F6B071600D9AC88 /* MandalaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFE27FC31F6B071600D9AC88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Robert Steiner";
+				TargetAttributes = {
+					DFE27FCA1F6B071600D9AC88 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					DFE27FDE1F6B071600D9AC88 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFE27FCA1F6B071600D9AC88;
+					};
+					DFE27FE91F6B071600D9AC88 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFE27FCA1F6B071600D9AC88;
+					};
+				};
+			};
+			buildConfigurationList = DFE27FC61F6B071600D9AC88 /* Build configuration list for PBXProject "Mandala" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFE27FC21F6B071600D9AC88;
+			productRefGroup = DFE27FCC1F6B071600D9AC88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFE27FCA1F6B071600D9AC88 /* Mandala */,
+				DFE27FDE1F6B071600D9AC88 /* MandalaTests */,
+				DFE27FE91F6B071600D9AC88 /* MandalaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFE27FC91F6B071600D9AC88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE27FD91F6B071600D9AC88 /* LaunchScreen.storyboard in Resources */,
+				DFE27FD61F6B071600D9AC88 /* Assets.xcassets in Resources */,
+				DFE27FD41F6B071600D9AC88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE27FDD1F6B071600D9AC88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE27FE81F6B071600D9AC88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFE27FC71F6B071600D9AC88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE27FFD1F6B074600D9AC88 /* Mood.swift in Sources */,
+				DFE280071F6B1B3400D9AC88 /* MoodListViewController.swift in Sources */,
+				DFE27FCF1F6B071600D9AC88 /* AppDelegate.swift in Sources */,
+				DFE280051F6B15EB00D9AC88 /* MoodSelectionViewController.swift in Sources */,
+				DFE280031F6B0E3C00D9AC88 /* UIImage+Extension.swift in Sources */,
+				DF5F9CF41F6B206200A7017C /* MoodsConfigurable.swift in Sources */,
+				DFE27FFF1F6B076900D9AC88 /* MoodEntry.swift in Sources */,
+				DFE280011F6B0CAD00D9AC88 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE27FDB1F6B071600D9AC88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE27FE41F6B071600D9AC88 /* MandalaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE27FE61F6B071600D9AC88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE27FEF1F6B071600D9AC88 /* MandalaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFE27FE11F6B071600D9AC88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE27FCA1F6B071600D9AC88 /* Mandala */;
+			targetProxy = DFE27FE01F6B071600D9AC88 /* PBXContainerItemProxy */;
+		};
+		DFE27FEC1F6B071600D9AC88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE27FCA1F6B071600D9AC88 /* Mandala */;
+			targetProxy = DFE27FEB1F6B071600D9AC88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFE27FD21F6B071600D9AC88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE27FD31F6B071600D9AC88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFE27FD71F6B071600D9AC88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE27FD81F6B071600D9AC88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFE27FF11F6B071600D9AC88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFE27FF21F6B071600D9AC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFE27FF41F6B071600D9AC88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mandala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.Mandala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFE27FF51F6B071600D9AC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Mandala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.Mandala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFE27FF71F6B071600D9AC88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MandalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.MandalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mandala.app/Mandala";
+			};
+			name = Debug;
+		};
+		DFE27FF81F6B071600D9AC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MandalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.MandalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mandala.app/Mandala";
+			};
+			name = Release;
+		};
+		DFE27FFA1F6B071600D9AC88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MandalaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.MandalaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mandala;
+			};
+			name = Debug;
+		};
+		DFE27FFB1F6B071600D9AC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MandalaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.MandalaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mandala;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFE27FC61F6B071600D9AC88 /* Build configuration list for PBXProject "Mandala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE27FF11F6B071600D9AC88 /* Debug */,
+				DFE27FF21F6B071600D9AC88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE27FF31F6B071600D9AC88 /* Build configuration list for PBXNativeTarget "Mandala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE27FF41F6B071600D9AC88 /* Debug */,
+				DFE27FF51F6B071600D9AC88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE27FF61F6B071600D9AC88 /* Build configuration list for PBXNativeTarget "MandalaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE27FF71F6B071600D9AC88 /* Debug */,
+				DFE27FF81F6B071600D9AC88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE27FF91F6B071600D9AC88 /* Build configuration list for PBXNativeTarget "MandalaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE27FFA1F6B071600D9AC88 /* Debug */,
+				DFE27FFB1F6B071600D9AC88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFE27FC31F6B071600D9AC88 /* Project object */;
+}
